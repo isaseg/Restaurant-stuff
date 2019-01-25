@@ -170,12 +170,11 @@
           document.getElementById('amnt1').innerHTML = amnt1;
           if (amnt < 1) {
             document.getElementById('min1').disabled = true;
-          }
+          }}
         function add1() {
           amnt++;
           document.getElementById('amnt1').innerHTML = amnt1;
-          
-        }
+          }
       };
       xmlhttp.open("GET","restaurant.json",true);
       xmlhttp.send();
