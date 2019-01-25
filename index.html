@@ -1,21 +1,140 @@
 <html>
   <head>
-    
+    <style>
+      div {
+        position: relative;
+      }
+      #one {
+        background-color: red;
+        width: 33vw;
+        max-width: 33vw;
+        height: 75vh;
+        max-height: 75vh;
+      }
+      #imgone {
+        width: 33vw;
+        height: 30vh;
+        background-image: url('https://i2.wp.com/www.frugalfeeds.com.au/wp-content/uploads/2016/05/hero_pdt_hamburger.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+      }
+      #priceone {
+        height: ;
+      }
+      #two {
+        background-color: orange;
+        margin-left: 33vw;
+        margin-top: -75vh;
+        width: 33vw;
+        max-width: 33vw;
+        height: 75vh;
+        max-height: 75vh;
+      }
+      #imgtwo {
+        width: 33vw;
+        height: 30vh;
+        background-image: url('https://www.rankpov.com/uploads/items/5a9f016a90a19_1520370026.png');
+        background-size: 70%;
+        background-position: 50% 40%;
+        background-repeat: no-repeat;
+      }
+      #three {
+        background-color: yellow;
+        margin-left: 66vw;
+        margin-top: -75vh;
+        width: 33vw;
+        max-width: 33vw;
+        height: 75vh;
+        max-height: 75vh;
+      }
+      #imgthree {
+        width: 33vw;
+        height: 30vh;
+        background-image: url('https://mcdonalds.co.nz/sites/mcdonalds.co.nz/files/Cheeseburger_hero.png');
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: 50% 80%;
+      }
+      #four {
+        background-color: green;
+        margin-left: 0vw;
+        width: 33vw;
+        max-width: 33vw;
+        height: 75vh;
+        max-height: 75vh;
+      }
+      #imgfour {
+        width: 33vw;
+        height: 30vh;
+        background-image: url('http://www.mcdonalds.co.uk/content/dam/mcdonaldsuk/item/live/mcdonalds-Double-Cheeseburger.png');
+        background-size: 55%;
+        background-repeat: no-repeat;
+        background-position: 50% 80%;
+      }
+      #five {
+        background-color: blue;
+        margin-left: 33vw;
+        margin-top: -75vh;
+        width: 33vw;
+        max-width: 33vw;
+        height: 75vh;
+        max-height: 75vh;
+      }
+      #imgfive {
+        width: 33vw;
+        height: 30vh;
+        background-image: url('http://www.mcdonalds.co.uk/content/dam/mcdonaldsuk/item/live/mcdonalds-Double-Cheeseburger.png');
+        background-size: 55%;
+        background-repeat: no-repeat;
+        background-position: 50% 80%;
+      }
+      #six {
+        background-color: purple;
+        margin-left: 66vw;
+        margin-top: -75vh;
+        width: 33vw;
+        max-width: 33vw;
+        height: 75vh;
+        max-height: 75vh;
+      }
+      #imgsix {
+        width: 33vw;
+        height: 30vh;
+        background-image: url('http://www.mcdonalds.co.uk/content/dam/mcdonaldsuk/item/live/mcdonalds-Double-Cheeseburger.png');
+        background-size: 55%;
+        background-repeat: no-repeat;
+        background-position: 50% 80%;
+      }
+    </style>
   </head>
   <body>
-    <h1 id="text"></h1>
+    <div id="one"><div id="imgone"></div><p id="priceone"></p><p id="descone"></p></div>
+    <div id="two"><div id="imgtwo"></div><div id="pricetwo"></div><div id="desctwo"></div></div>
+    <div id="three"><div id="imgthree"></div><div id="pricethree"></div><div id="descthree"></div></div>
+    <div id="four"><div id="imgfour"></div><div id="pricefour"></div><div id="descfour"></div></div>
+    <div id="five"><div id="imgfive"></div><div id="pricefive"></div><div id="descfive"></div></div>
+    <div id="six"><div id="imgsix"></div><div id="pricesix"></div><div id="descsix"></div></div>
     <script>
+    var totalItems;
+    var mydata;
+    var burgnameArr = [];
+    var burgpriceArr = [];
+    var burg0price;
+    var sub0;
+    
       var xmlhttp = new XMLHttpRequest();
-
-      xmlhttp.onreadystatechange = function () {
+      
+      xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-         var mydata = JSON.parse(this.responseText);
-          document.getElementById('text').innerHTML = mydata.food[1].name;
+          var mydata = JSON.parse(this.responseText);
+        
+        document.getElementById('priceone').innerHTML = "$" + mydata.food[0].price;
+        document.getElementById('descone').innerHTML = mydata.food[0].description;
         }
       };
-
-        xmlhttp.open("GET","bento.json",true);
-        xmlhttp.send();
+      xmlhttp.open("GET","restaurant.json",true);
+      xmlhttp.send();
     </script>
   </body>
 </html>
