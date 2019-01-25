@@ -1,0 +1,34 @@
+{
+  "food": [
+    {
+      "name": "Hamburger",
+      "price": 10,
+      "description": "This is a regular hamburger with one patty, pickles, onions, ketchup & mustard, and two buns"
+    },
+    {
+      "name": "Double Burger",
+      "price": 10,
+      "description": "This is a regular hamburger with two patties, pickles, onions, ketchup & mustard, one slice of American cheese, and two buns"
+    },
+    {
+      "name": "Cheeseburger",
+      "price": 10,
+      "description": "This is a regular hamburger with one patty, pickles, onions, ketchup & mustard, one slice of American cheese, and two buns"
+    },
+    {
+      "name": "Double Cheeseburger",
+      "price": 10,
+      "description": "This is a regular hamburger with two patties, pickles, onions, ketchup & mustard, two slices of American cheese and two buns"
+    },
+    {
+      "name": "Bacon Burger",
+      "price": 10,
+      "description": "This is a burger with one patty, fried onion strings, sweet mustard, one slice of white Cheddar cheese, bacon, and two buns"
+    },
+    {
+      "name": "Double Bacon Burger",
+      "price": 10,
+      "description": "This is a burger with two patties, fried onion strings, sweet mustard, two slices of white Cheddar cheese, bacon, and two buns"
+    }
+    ]
+}
