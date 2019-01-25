@@ -20,7 +20,39 @@
         background-position: 0vw 0vh;
       }
       #priceone {
-        height: ;
+        font-size: 10vh;
+        margin-top: 0vh;
+        
+      }
+      #descone {
+        font-size: 5vh;
+        margin-top: -10vh;
+      }
+      #butdiv1 {
+        width: 33vw;
+        height: 23vh;
+        margin-top: -0vh;
+        position: absolute;
+        background-color: yellow;
+      }
+      button {
+        width: 5vw;
+        height: 10vh;
+        position: absolute;
+        margin-top: 6vh;
+      }
+      #min1 {
+        margin-left: 1vw;
+        margin-top: 5.5vh;
+      }
+      #amnt1 {
+        font-size: 10vh;
+        margin-left: 15vw;
+        margin-top: 5vh;
+      }
+      #add1 {
+        margin-top: -18.5vh;
+        margin-left: 27vw;
       }
       #two {
         background-color: orange;
@@ -109,7 +141,7 @@
     </style>
   </head>
   <body>
-    <div id="one"><div id="imgone"></div><p id="priceone"></p><p id="descone"></p></div>
+    <div id="one"><div id="imgone"></div><p id="priceone"></p><p id="descone"></p><div id="butdiv1"><button id="min1" onclick="minus1()"></button><h1 id="amnt1">0</h1><button id="add1" onclick="plus1"></button></div></div>
     <div id="two"><div id="imgtwo"></div><div id="pricetwo"></div><div id="desctwo"></div></div>
     <div id="three"><div id="imgthree"></div><div id="pricethree"></div><div id="descthree"></div></div>
     <div id="four"><div id="imgfour"></div><div id="pricefour"></div><div id="descfour"></div></div>
@@ -123,6 +155,8 @@
     var burg0price;
     var sub0;
     
+    var amnt1 = 0;
+    
       var xmlhttp = new XMLHttpRequest();
       
       xmlhttp.onreadystatechange = function() {
@@ -131,6 +165,13 @@
         
         document.getElementById('priceone').innerHTML = "$" + mydata.food[0].price;
         document.getElementById('descone').innerHTML = mydata.food[0].description;
+        }
+        function minus1() {
+          amnt--;
+          if (amnt < 1) {
+            document.getElementById('min1').disabled = true;
+          }
+          
         }
       };
       xmlhttp.open("GET","restaurant.json",true);
