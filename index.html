@@ -165,7 +165,11 @@
         document.getElementById('priceone').innerHTML = "$" + mydata.food[0].price;
         document.getElementById('descone').innerHTML = mydata.food[0].description;
         }
-        function minus1() {
+      };
+      xmlhttp.open("GET","restaurant.json",true);
+      xmlhttp.send();
+      
+      function minus1() {
           amount1--;
           document.getElementById('amnt1').innerHTML = amount1;
           if (amount1 < 1) {
@@ -175,9 +179,6 @@
           amount1++;
           document.getElementById('amnt1').innerHTML = amount1;
           }
-      };
-      xmlhttp.open("GET","restaurant.json",true);
-      xmlhttp.send();
     </script>
   </body>
 </html>
