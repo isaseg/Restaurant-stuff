@@ -171,13 +171,10 @@
       xmlhttp.send();
       
       function minus1() {
+        if (amount1 > 0) {
           amount1--;
           document.getElementById('amnt1').innerHTML = amount1;
-          if (amount1 < 1) {
-            document.getElementById('min1').disabled = true;
           }
-          else {
-            document.getElementById('min1').disabled = false;
       }
         function add1() {
           amount1++;
