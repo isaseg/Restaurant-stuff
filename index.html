@@ -1,8 +1,18 @@
 <html>
   <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <style>
+      body {
+        background-color: black;
+      }
       div {
         position: relative;
+      }
+      button {
+        width: 5vw;
+        height: 10vh;
+        position: absolute;
+        margin-top: 6vh;
       }
       #one {
         background-color: red;
@@ -33,17 +43,10 @@
         height: 23vh;
         margin-top: -0vh;
         position: absolute;
-        background-color: yellow;
-      }
-      button {
-        width: 5vw;
-        height: 10vh;
-        position: absolute;
-        margin-top: 6vh;
       }
       #min1 {
         margin-left: 1vw;
-        margin-top: 5.5vh;
+        margin-top: 5vh;
       }
       #amnt1 {
         font-size: 10vh;
@@ -71,6 +74,34 @@
         background-position: 5vw -7vh;
         background-repeat: no-repeat;
       }
+      #pricetwo {
+        font-size: 8vh;
+        margin-top: 0vh;
+        
+      }
+      #desctwo {
+        font-size: 4vh;
+        margin-top: -10vh;
+      }
+      #butdiv2 {
+        width: 33vw;
+        height: 23vh;
+        margin-top: -0vh;
+        position: absolute;
+      }
+      #min2 {
+        margin-left: 1vw;
+        margin-top: 5vh;
+      }
+      #amnt2 {
+        font-size: 10vh;
+        margin-left: 15vw;
+        margin-top: 5vh;
+      }
+      #add2 {
+        margin-top: -18.5vh;
+        margin-left: 27vw;
+      }
       #three {
         background-color: yellow;
         margin-left: 66vw;
@@ -88,6 +119,34 @@
         background-repeat: no-repeat;
         background-position: 1vw -14vh;
       }
+      #pricethree {
+        font-size: 8vh;
+        margin-top: 0vh;
+        
+      }
+      #descthree {
+        font-size: 4vh;
+        margin-top: -10vh;
+      }
+      #butdiv3 {
+        width: 33vw;
+        height: 23vh;
+        margin-top: -0vh;
+        position: absolute;
+      }
+      #min3 {
+        margin-left: 1vw;
+        margin-top: 5vh;
+      }
+      #amnt3 {
+        font-size: 10vh;
+        margin-left: 15vw;
+        margin-top: 5vh;
+      }
+      #add3 {
+        margin-top: -18.5vh;
+        margin-left: 27vw;
+      }
       #four {
         background-color: green;
         margin-left: 0vw;
@@ -104,6 +163,34 @@
         background-repeat: no-repeat;
         background-position: 6vw -14vh;
       }
+      #pricefour {
+        font-size: 8vh;
+        margin-top: 0vh;
+        
+      }
+      #descfour {
+        font-size: 4vh;
+        margin-top: -10vh;
+      }
+      #butdiv4 {
+        width: 33vw;
+        height: 23vh;
+        margin-top: -0vh;
+        position: absolute;
+      }
+      #min4 {
+        margin-left: 1vw;
+        margin-top: 5vh;
+      }
+      #amnt4 {
+        font-size: 10vh;
+        margin-left: 15vw;
+        margin-top: 5vh;
+      }
+      #add4 {
+        margin-top: -18.5vh;
+        margin-left: 27vw;
+      }
       #five {
         background-color: blue;
         margin-left: 33vw;
@@ -116,10 +203,38 @@
       #imgfive {
         width: 33vw;
         height: 30vh;
-        background-image: url('http://www.mcdonalds.co.uk/content/dam/mcdonaldsuk/item/live/mcdonalds-Double-Cheeseburger.png');
-        background-size: 55%;
+        background-image: url('https://8exll2rwl8l1f2ayejq2l9yh-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/BBQ-Bacon-Cheese-2.png');
+        background-size: 65%;
         background-repeat: no-repeat;
-        background-position: 7vw -13vh;
+        background-position: 6vw -3vh;
+      }
+      #pricefive {
+        font-size: 8vh;
+        margin-top: 0vh;
+        
+      }
+      #descfive {
+        font-size: 4vh;
+        margin-top: -10vh;
+      }
+      #butdiv5 {
+        width: 33vw;
+        height: 23vh;
+        margin-top: -0vh;
+        position: absolute;
+      }
+      #min5 {
+        margin-left: 1vw;
+        margin-top: 5vh;
+      }
+      #amnt5 {
+        font-size: 10vh;
+        margin-left: 15vw;
+        margin-top: 5vh;
+      }
+      #add5 {
+        margin-top: -18.5vh;
+        margin-left: 27vw;
       }
       #six {
         background-color: purple;
@@ -133,20 +248,48 @@
       #imgsix {
         width: 33vw;
         height: 30vh;
-        background-image: url('http://www.mcdonalds.co.uk/content/dam/mcdonaldsuk/item/live/mcdonalds-Double-Cheeseburger.png');
-        background-size: 55%;
+        background-image: url('https://www.bk.com/sites/default/files/02909-04_BK_Web_BigFish_500x540_CR.png');
+        background-size: 65%;
         background-repeat: no-repeat;
         background-position: 7vw -13vh;
+      }
+      #pricesix {
+        font-size: 8vh;
+        margin-top: 0vh;
+        
+      }
+      #descsix {
+        font-size: 4vh;
+        margin-top: -10vh;
+      }
+      #butdiv6 {
+        width: 33vw;
+        height: 23vh;
+        margin-top: -0vh;
+        position: absolute;
+      }
+      #min6 {
+        margin-left: 1vw;
+        margin-top: 5vh;
+      }
+      #amnt6 {
+        font-size: 10vh;
+        margin-left: 15vw;
+        margin-top: 5vh;
+      }
+      #add6 {
+        margin-top: -18.5vh;
+        margin-left: 27vw;
       }
     </style>
   </head>
   <body>
     <div id="one"><div id="imgone"></div><p id="priceone"></p><p id="descone"></p><div id="butdiv1"><button id="min1" onclick="minus1()"></button><h1 id="amnt1">0</h1><button id="add1" onclick="add1()"></button></div></div>
-    <div id="two"><div id="imgtwo"></div><div id="pricetwo"></div><div id="desctwo"></div></div>
-    <div id="three"><div id="imgthree"></div><div id="pricethree"></div><div id="descthree"></div></div>
-    <div id="four"><div id="imgfour"></div><div id="pricefour"></div><div id="descfour"></div></div>
-    <div id="five"><div id="imgfive"></div><div id="pricefive"></div><div id="descfive"></div></div>
-    <div id="six"><div id="imgsix"></div><div id="pricesix"></div><div id="descsix"></div></div>
+    <div id="two"><div id="imgtwo"></div><p id="pricetwo"></p><p id="desctwo"></p><div id="butdiv2"><button id="min2" onclick="minus2()"></button><h1 id="amnt2">0</h1><button id="add2" onclick="add2()"></button></div></div>
+    <div id="three"><div id="imgthree"></div><p id="pricethree"></p><p id="descthree"></p><div id="butdiv3"><button id="min3" onclick="minus3()"></button><h1 id="amnt3">0</h1><button id="add3" onclick="add3()"></button></div></div>
+    <div id="four"><div id="imgfour"></div><p id="pricefour"></p><p id="descfour"></p><div id="butdiv4"><button id="min4" onclick="minus4()"></button><h1 id="amnt4">0</h1><button id="add4" onclick="add4()"></button></div></div>
+    <div id="five"><div id="imgfive"></div><p id="pricefive"></p><p id="descfive"></p><div id="butdiv5"><button id="min5" onclick="minus5()"></button><h1 id="amnt5">0</h1><button id="add5" onclick="add5()"></button></div></div>
+    <div id="six"><div id="imgsix"></div><p id="pricesix"></p><p id="descsix"></p><div id="butdiv6"><button id="min6" onclick="minus6()"></button><h1 id="amnt6">0</h1><button id="add6" onclick="add6()"></button></div></div>
     <script>
     var totalItems;
     var mydata;
@@ -156,6 +299,11 @@
     var sub0;
     
     var amount1 = 0;
+    var amount2 = 0;
+    var amount3 = 0;
+    var amount4 = 0;
+    var amount5 = 0;
+    var amount6 = 0;
     
       var xmlhttp = new XMLHttpRequest();
       
@@ -165,6 +313,21 @@
         
         document.getElementById('priceone').innerHTML = "$" + mydata.food[0].price;
         document.getElementById('descone').innerHTML = mydata.food[0].description;
+        
+        document.getElementById('pricetwo').innerHTML = "$" + mydata.food[1].price;
+        document.getElementById('desctwo').innerHTML = mydata.food[1].description;
+        
+        document.getElementById('pricethree').innerHTML = "$" + mydata.food[2].price;
+        document.getElementById('descthree').innerHTML = mydata.food[2].description;
+        
+        document.getElementById('pricefour').innerHTML = "$" + mydata.food[3].price;
+        document.getElementById('descfour').innerHTML = mydata.food[3].description;
+        
+        document.getElementById('pricefive').innerHTML = "$" + mydata.food[4].price;
+        document.getElementById('descfive').innerHTML = mydata.food[4].description;
+        
+        document.getElementById('pricesix').innerHTML = "$" + mydata.food[5].price;
+        document.getElementById('descsix').innerHTML = mydata.food[5].description;
         }
       };
       xmlhttp.open("GET","restaurant.json",true);
@@ -179,6 +342,56 @@
         function add1() {
           amount1++;
           document.getElementById('amnt1').innerHTML = amount1;
+          }
+      function minus2() {
+        if (amount2 > 0) {
+          amount2--;
+          document.getElementById('amnt2').innerHTML = amount2;
+          }
+      }
+        function add2() {
+          amount2++;
+          document.getElementById('amnt2').innerHTML = amount2;
+          }
+      function minus3() {
+        if (amount3 > 0) {
+          amount3--;
+          document.getElementById('amnt3').innerHTML = amount3;
+          }
+      }
+        function add3() {
+          amount3++;
+          document.getElementById('amnt3').innerHTML = amount3;
+          }
+      function minus4() {
+        if (amount4 > 0) {
+          amount4--;
+          document.getElementById('amnt4').innerHTML = amount4;
+          }
+      }
+        function add4() {
+          amount4++;
+          document.getElementById('amnt4').innerHTML = amount4;
+          }
+      function minus5() {
+        if (amount5 > 0) {
+          amount5--;
+          document.getElementById('amnt5').innerHTML = amount5;
+          }
+      }
+        function add5() {
+          amount5++;
+          document.getElementById('amnt5').innerHTML = amount5;
+          }
+      function minus6() {
+        if (amount6 > 0) {
+          amount6--;
+          document.getElementById('amnt6').innerHTML = amount6;
+          }
+      }
+        function add6() {
+          amount6++;
+          document.getElementById('amnt6').innerHTML = amount6;
           }
     </script>
   </body>
