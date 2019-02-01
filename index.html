@@ -16,6 +16,9 @@
         font-size: 7vh;
         text-align: center;
       }
+      h1 {
+        margin-left: 0.5vw;
+      }
       #one {
         background-color: red;
         width: 33vw;
@@ -32,15 +35,13 @@
         background-position: 0vw 0vh;
       }
       #priceone {
-        margin-left: 0.5vw;
         font-size: 8vh;
         margin-top: 0vh;
         
       }
       #descone {
-        margin-left: 0.5vw;
         font-size: 4vh;
-        margin-top: -9vh;
+        margin-top: -10vh;
       }
       #butdiv1 {
         width: 33vw;
@@ -79,15 +80,13 @@
         background-repeat: no-repeat;
       }
       #pricetwo {
-        margin-left: 0.5vw;
         font-size: 8vh;
         margin-top: 0vh;
         
       }
       #desctwo {
-        margin-left: 0.5vw;
         font-size: 4vh;
-        margin-top: -9vh;
+        margin-top: -10vh;
       }
       #butdiv2 {
         width: 33vw;
@@ -126,15 +125,13 @@
         background-position: 1vw -14vh;
       }
       #pricethree {
-        margin-left: 0.5vw;
         font-size: 8vh;
         margin-top: 0vh;
         
       }
       #descthree {
-        margin-left: 0.5vw;
         font-size: 4vh;
-        margin-top: -9vh;
+        margin-top: -10vh;
       }
       #butdiv3 {
         width: 33vw;
@@ -172,15 +169,13 @@
         background-position: 6vw -14vh;
       }
       #pricefour {
-        margin-left: 0.5vw;
         font-size: 8vh;
         margin-top: 0vh;
         
       }
       #descfour {
-        margin-left: 0.5vw;
         font-size: 4vh;
-        margin-top: -9vh;
+        margin-top: -10vh;
       }
       #butdiv4 {
         width: 33vw;
@@ -219,15 +214,13 @@
         background-position: 6vw -3vh;
       }
       #pricefive {
-        margin-left: 0.5vw;
         font-size: 8vh;
         margin-top: 0vh;
         
       }
       #descfive {
-        margin-left: 0.5vw;
         font-size: 4vh;
-        margin-top: -9vh;
+        margin-top: -10vh;
       }
       #butdiv5 {
         width: 33vw;
@@ -266,15 +259,13 @@
         background-position: 7vw -13vh;
       }
       #pricesix {
-        margin-left: 0.5vw;
         font-size: 8vh;
         margin-top: 0vh;
         
       }
       #descsix {
-        margin-left: 0.5vw;
         font-size: 4vh;
-        margin-top: -9vh;
+        margin-top: -10vh;
       }
       #butdiv6 {
         width: 33vw;
@@ -295,6 +286,12 @@
         margin-top: -18.5vh;
         margin-left: 27vw;
       }
+      #theorder {
+        background-color: white;
+        border-color: gray;
+        width: 99vw;
+        height: 30vh;
+      }
     </style>
   </head>
   <body>
@@ -304,7 +301,7 @@
     <div id="four"><div id="imgfour"></div><p id="pricefour"></p><p id="descfour"></p><div id="butdiv4"><button id="min4" onclick="minus4()">-</button><h1 id="amnt4">0</h1><button id="add4" onclick="add4()">+</button></div></div>
     <div id="five"><div id="imgfive"></div><p id="pricefive"></p><p id="descfive"></p><div id="butdiv5"><button id="min5" onclick="minus5()">-</button><h1 id="amnt5">0</h1><button id="add5" onclick="add5()">+</button></div></div>
     <div id="six"><div id="imgsix"></div><p id="pricesix"></p><p id="descsix"></p><div id="butdiv6"><button id="min6" onclick="minus6()">-</button><h1 id="amnt6">0</h1><button id="add6" onclick="add6()">+</button></div></div>
-    <div id="checkout"></div>
+    <div id="theorder"><h1>The order:</h1><p id="itemone"></p><p id="itemtwo"></p><p id="itemthree"></p><p id="itemfour"></p><p id="itemfive"></p><p id="itemsix"></p></div>
     <script>
     var totalItems;
     var mydata;
@@ -319,6 +316,13 @@
     var amount4 = 0;
     var amount5 = 0;
     var amount6 = 0;
+    
+    var price1 = 0;
+    var price2 = 0;
+    var price3 = 0;
+    var price4 = 0;
+    var price5 = 0;
+    var price6 = 0;
     
       var xmlhttp = new XMLHttpRequest();
       
@@ -343,6 +347,8 @@
         
         document.getElementById('pricesix').innerHTML = "$" + mydata.food[5].price;
         document.getElementById('descsix').innerHTML = mydata.food[5].description;
+        
+        price1 = amount1 * mydata.food[0].price;
         }
       };
       xmlhttp.open("GET","restaurant.json",true);
@@ -352,11 +358,13 @@
         if (amount1 > 0) {
           amount1--;
           document.getElementById('amnt1').innerHTML = amount1;
+          document.getElementById('itemone').innerHTML = amount1 + " Hamburger" + " " + price1;
           }
       }
         function add1() {
           amount1++;
           document.getElementById('amnt1').innerHTML = amount1;
+          document.getElementById('itemone').innerHTML = amount1 + " Hamburger";
           }
       function minus2() {
         if (amount2 > 0) {
