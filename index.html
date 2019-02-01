@@ -327,37 +327,34 @@
       xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           var mydata = JSON.parse(this.responseText);
-          
-        var price1 = mydata.food[0].price;
-        var price2 = mydata.food[1].price;
-        var price3 = mydata.food[2].price;
-        var price4 = mydata.food[3].price;
-        var price5 = mydata.food[4].price;
-        var price6 = mydata.food[5].price;
-          
-        window.price1 = price1;
-        window.price1 = price2;
-        window.price1 = price3;
-        window.price1 = price4;
-        window.price1 = price5;
-        window.price1 = price6;
     
-        
+        var price1 = mydata.food[0].price;          
+        window.price1 = price1;
         document.getElementById('priceone').innerHTML = "$" + mydata.food[0].price;
         document.getElementById('descone').innerHTML = mydata.food[0].description;
-        
+          
+        var price2 = mydata.food[1].price;
+        window.price2 = price2;
         document.getElementById('pricetwo').innerHTML = "$" + mydata.food[1].price;
         document.getElementById('desctwo').innerHTML = mydata.food[1].description;
         
+        var price3 = mydata.food[2].price;
+        window.price3 = price3;
         document.getElementById('pricethree').innerHTML = "$" + mydata.food[2].price;
         document.getElementById('descthree').innerHTML = mydata.food[2].description;
         
+        var price4 = mydata.food[3].price;
+        window.price4 = price4;
         document.getElementById('pricefour').innerHTML = "$" + mydata.food[3].price;
         document.getElementById('descfour').innerHTML = mydata.food[3].description;
         
+        var price5 = mydata.food[4].price;
+        window.price5 = price5;
         document.getElementById('pricefive').innerHTML = "$" + mydata.food[4].price;
         document.getElementById('descfive').innerHTML = mydata.food[4].description;
         
+        var price6 = mydata.food[5].price;
+        window.price6 = price6;
         document.getElementById('pricesix').innerHTML = "$" + mydata.food[5].price;
         document.getElementById('descsix').innerHTML = mydata.food[5].description;
         }
