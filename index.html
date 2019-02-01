@@ -347,8 +347,6 @@
         
         document.getElementById('pricesix').innerHTML = "$" + mydata.food[5].price;
         document.getElementById('descsix').innerHTML = mydata.food[5].description;
-        
-        price1 = amount1 * mydata.food[0].price;
         }
       };
       xmlhttp.open("GET","restaurant.json",true);
@@ -357,6 +355,7 @@
       function minus1() {
         if (amount1 > 0) {
           amount1--;
+          price1 = amount1 * mydata.food[0].price;
           document.getElementById('amnt1').innerHTML = amount1;
           document.getElementById('itemone').innerHTML = amount1 + " Hamburger" + " " + price1;
           }
