@@ -19,8 +19,11 @@
       h1 {
         margin-left: 0.5vw;
       }
+      p {
+        margin-left: 0.5vw
+      }
       #one {
-        background-color: white;
+        background-color: red;
         width: 33vw;
         max-width: 33vw;
         height: 75vh;
@@ -331,6 +334,13 @@
         var price4 = mydata.food[3].price;
         var price5 = mydata.food[4].price;
         var price6 = mydata.food[5].price;
+          
+        window.price1 = price1;
+        window.price1 = price2;
+        window.price1 = price3;
+        window.price1 = price4;
+        window.price1 = price5;
+        window.price1 = price6;
     
         
         document.getElementById('priceone').innerHTML = "$" + mydata.food[0].price;
