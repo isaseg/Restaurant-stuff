@@ -20,7 +20,7 @@
         margin-left: 0.5vw;
       }
       #one {
-        background-color: red;
+        background-color: white;
         width: 33vw;
         max-width: 33vw;
         height: 75vh;
@@ -361,7 +361,7 @@
           document.getElementById('amnt1').innerHTML = amount1;
           var foodAndAmount1 = document.getElementById('itemone').innerHTML = amount1 + " Hamburger";
           }
-          document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2))).toFixed(2);
+          document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1))).toFixed(2);
           localStorage.setItem('item1', foodAndAmount1);
       }
         function add1() {
@@ -370,7 +370,7 @@
           if (amount1 => 1 ) {
           var foodAndAmount1 = document.getElementById('itemone').innerHTML = amount1 + " Hamburger";
           }
-          document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2))).toFixed(2);
+          document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1))).toFixed(2);
           localStorage.setItem('item1', foodAndAmount1);
           }
       function minus2() {
