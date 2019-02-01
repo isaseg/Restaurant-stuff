@@ -301,7 +301,7 @@
     <div id="four"><div id="imgfour"></div><p id="pricefour"></p><p id="descfour"></p><div id="butdiv4"><button id="min4" onclick="minus4()">-</button><h1 id="amnt4">0</h1><button id="add4" onclick="add4()">+</button></div></div>
     <div id="five"><div id="imgfive"></div><p id="pricefive"></p><p id="descfive"></p><div id="butdiv5"><button id="min5" onclick="minus5()">-</button><h1 id="amnt5">0</h1><button id="add5" onclick="add5()">+</button></div></div>
     <div id="six"><div id="imgsix"></div><p id="pricesix"></p><p id="descsix"></p><div id="butdiv6"><button id="min6" onclick="minus6()">-</button><h1 id="amnt6">0</h1><button id="add6" onclick="add6()">+</button></div></div>
-    <div id="theorder"><h1>The order:</h1><p id="itemone"></p><p id="itemtwo"></p><p id="itemthree"></p><p id="itemfour"></p><p id="itemfive"></p><p id="itemsix"></p></div>
+    <div id="theorder"><h1>The order:</h1><p id="itemone"></p><p id="itemtwo"></p><p id="itemthree"></p><p id="itemfour"></p><p id="itemfive"></p><p id="itemsix"></p><p id="totalPrice"></p></div>
     <script>
     var totalItems;
     var mydata;
@@ -316,19 +316,23 @@
     var amount4 = 0;
     var amount5 = 0;
     var amount6 = 0;
-    
-    var price1 = 0;
-    var price2 = 0;
-    var price3 = 0;
-    var price4 = 0;
-    var price5 = 0;
-    var price6 = 0;
+      
+    var x = document.getElementById('totalPrice').innerHTML;
+    var tax = 1.04712;
     
       var xmlhttp = new XMLHttpRequest();
       
       xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           var mydata = JSON.parse(this.responseText);
+          
+        var price1 = mydata.food[0].price;
+        var price2 = mydata.food[1].price;
+        var price3 = mydata.food[2].price;
+        var price4 = mydata.food[3].price;
+        var price5 = mydata.food[4].price;
+        var price6 = mydata.food[5].price;
+    
         
         document.getElementById('priceone').innerHTML = "$" + mydata.food[0].price;
         document.getElementById('descone').innerHTML = mydata.food[0].description;
@@ -357,13 +361,18 @@
           amount1--;
           price1 = amount1 * mydata.food[0].price;
           document.getElementById('amnt1').innerHTML = amount1;
-          document.getElementById('itemone').innerHTML = amount1 + " Hamburger" + " " + price1;
+          var foodAndAmount1 = document.getElementById('itemone').innerHTML = amount1 + " Hamburger" + " " + price1;
           }
+          x = "Total price: $" + (tax * ((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
+          localStorage.setItem('item1', foodAndAmount1);
       }
         function add1() {
           amount1++;
+          price1 = amount1 * mydata.food[0].price;
           document.getElementById('amnt1').innerHTML = amount1;
-          document.getElementById('itemone').innerHTML = amount1 + " Hamburger";
+          var foodAndAmount1 = document.getElementById('itemone').innerHTML = amount1 + " Hamburger" + " " + price1;
+          x = "Total price: $" + (tax * ((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
+          localStorage.setItem('item1', foodAndAmount1);
           }
       function minus2() {
         if (amount2 > 0) {
