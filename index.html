@@ -301,8 +301,11 @@
         font-size: 10vh;
       }
       #checkout {
-        margin-left: 20vw;
-        margin-top: -25vh;
+        float: right;
+        width: 15vw;
+        height: 30vh;
+        background-color: black;
+        color: white;
       }
     </style>
   </head>
@@ -314,7 +317,7 @@
     <div id="five"><div id="imgfive"></div><h1 id="namefive"></h1><h1 id="pricefive"></h1><p id="descfive"></p><div id="butdiv5"><button id="min5" onclick="minus5()">-</button><h1 id="amnt5">0</h1><button id="add5" onclick="add5()">+</button></div></div>
     <div id="six"><div id="imgsix"></div><h1 id="namesix"></h1><h1 id="pricesix"></h1><p id="descsix"></p><div id="butdiv6"><button id="min6" onclick="minus6()">-</button><h1 id="amnt6">0</h1><button id="add6" onclick="add6()">+</button></div></div>
     <div id="theorder"><h1>The order:</h1><p id="itemone"></p><p id="itemtwo"></p><p id="itemthree"></p><p id="itemfour"></p><p id="itemfive"></p><p id="itemsix"></p></div>
-    <h1 id="totalPrice"></h1><button id="checkout" onclick="checkout()"></button>
+    <h1 id="totalPrice"></h1><button id="checkout" onclick="checkout()">Checkout</button>
     <script>
     var amount1 = 0;
     var amount2 = 0;
