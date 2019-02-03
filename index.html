@@ -42,7 +42,6 @@
       }
       #priceone {
         margin-top: -1vh;
-        
       }
       #descone {
         margin-top: 5vh;
@@ -83,12 +82,14 @@
         background-position: 5vw -7vh;
         background-repeat: no-repeat;
       }
+      #nametwo {
+        margin-top: -1vh;
+      }
       #pricetwo {
-        margin-top: 0vh;
-        
+        margin-top: -1vh;
       }
       #desctwo {
-        margin-top: -10vh;
+        margin-top: 5vh;
       }
       #butdiv2 {
         width: 33vw;
@@ -126,12 +127,14 @@
         background-repeat: no-repeat;
         background-position: 1vw -14vh;
       }
+      #namethree {
+        margin-top: -1vh;
+      }
       #pricethree {
-        margin-top: 0vh;
-        
+        margin-top: -1vh;
       }
       #descthree {
-        margin-top: -10vh;
+        margin-top: 5vh;
       }
       #butdiv3 {
         width: 33vw;
@@ -168,12 +171,14 @@
         background-repeat: no-repeat;
         background-position: 6vw -14vh;
       }
+      #namefour {
+        margin-top: -1vh;
+      }
       #pricefour {
-        margin-top: 0vh;
-        
+        margin-top: -1vh;
       }
       #descfour {
-        margin-top: -10vh;
+        margin-top: 5vh;
       }
       #butdiv4 {
         width: 33vw;
@@ -211,12 +216,14 @@
         background-repeat: no-repeat;
         background-position: 6vw -3vh;
       }
+      #namefive {
+        margin-top: -1vh;
+      }
       #pricefive {
-        margin-top: 0vh;
-        
+        margin-top: -1vh;
       }
       #descfive {
-        margin-top: -10vh;
+        margin-top: 5vh;
       }
       #butdiv5 {
         width: 33vw;
@@ -254,12 +261,14 @@
         background-repeat: no-repeat;
         background-position: 7vw -13vh;
       }
+      #namesix {
+        margin-top: -1vh;
+      }
       #pricesix {
-        margin-top: 0vh;
-        
+        margin-top: -1vh;
       }
       #descsix {
-        margin-top: -10vh;
+        margin-top: 5vh;
       }
       #butdiv6 {
         width: 33vw;
@@ -312,36 +321,51 @@
         if (this.readyState == 4 && this.status == 200) {
           var mydata = JSON.parse(this.responseText);
     
-        var name1 = mydata.food[0].name;
-        window.name1 = name1;
         var price1 = mydata.food[0].price;          
         window.price1 = price1;
+        var name1 = mydata.food[0].name;
+        window.name1 = name1;
         document.getElementById('nameone').innerHTML = mydata.food[0].name;
         document.getElementById('priceone').innerHTML = "$" + mydata.food[0].price;
         document.getElementById('descone').innerHTML = mydata.food[0].description;
           
         var price2 = mydata.food[1].price;
         window.price2 = price2;
+        var name2 = mydata.food[1].name;
+        window.name2 = name2;
+        document.getElementById('nametwo').innerHTML = mydata.food[1].name;
         document.getElementById('pricetwo').innerHTML = "$" + mydata.food[1].price;
         document.getElementById('desctwo').innerHTML = mydata.food[1].description;
         
         var price3 = mydata.food[2].price;
         window.price3 = price3;
+        var name3 = mydata.food[2].name;
+        window.name3 = name3;
+        document.getElementById('namethree').innerHTML = mydata.food[2].name;
         document.getElementById('pricethree').innerHTML = "$" + mydata.food[2].price;
         document.getElementById('descthree').innerHTML = mydata.food[2].description;
         
         var price4 = mydata.food[3].price;
         window.price4 = price4;
+        var name4 = mydata.food[3].name;
+        window.name4 = name4;
+        document.getElementById('namefour').innerHTML = mydata.food[3].name;
         document.getElementById('pricefour').innerHTML = "$" + mydata.food[3].price;
         document.getElementById('descfour').innerHTML = mydata.food[3].description;
         
         var price5 = mydata.food[4].price;
         window.price5 = price5;
+        var name5 = mydata.food[4].name;
+        window.name5 = name5;
+        document.getElementById('namefive').innerHTML = mydata.food[4].name;
         document.getElementById('pricefive').innerHTML = "$" + mydata.food[4].price;
         document.getElementById('descfive').innerHTML = mydata.food[4].description;
         
         var price6 = mydata.food[5].price;
         window.price6 = price6;
+        var name6 = mydata.food[5].name;
+        window.name6 = name6;
+        document.getElementById('namesix').innerHTML = mydata.food[5].name;
         document.getElementById('pricesix').innerHTML = "$" + mydata.food[5].price;
         document.getElementById('descsix').innerHTML = mydata.food[5].description;
         }
