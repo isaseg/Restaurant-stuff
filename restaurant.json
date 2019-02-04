@@ -2,7 +2,7 @@
   "food": [
     {
       "name": "Hamburger",
-      "price": 1,
+      "price": 1.00,
       "description": "This is a regular hamburger with one patty, pickles, onions, ketchup & mustard, and two buns"
     },
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "Cheeseburger",
-      "price": 1,
+      "price": 1.00,
       "description": "This is a regular hamburger with one patty, pickles, onions, ketchup & mustard, one slice of American cheese, and two buns"
     },
     {
@@ -22,12 +22,12 @@
     },
     {
       "name": "Bacon Cheeseburger",
-      "price": 10,
+      "price": 2.00,
       "description": "This is a burger with two patties, two slices of cheese, bacon, and two buns"
     },
     {
       "name": "Fish Burger",
-      "price": 10,
+      "price": 4.00,
       "description": "This is a burger with two patties, white pollock with panko breading, tartar sauce, pickles, and two buns"
     }
     ]
