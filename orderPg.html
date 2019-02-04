@@ -35,15 +35,22 @@
     <p id="itemfour"></p>
     <p id="itemfive"></p>
     <p id="itemsix"></p>
+    <p id="totalPrice"></p>
     <button id="back" onclick="back()">Return to Restaurant Page</button>
   </div>
   <script>
-    document.getElementById('itemone').innerHTML = localStorage.getItem('item1');
-    document.getElementById('itemtwo').innerHTML = localStorage.getItem('item2');
-    document.getElementById('itemthree').innerHTML = localStorage.getItem('item3');
-    document.getElementById('itemfour').innerHTML = localStorage.getItem('item4');
-    document.getElementById('itemfive').innerHTML = localStorage.getItem('item5');
-    document.getElementById('itemsix').innerHTML = localStorage.getItem('item6');
+    var itemone = localStorage.getItem('item1');
+    var itemtwo = localStorage.getItem('item2');
+    var itemthree = localStorage.getItem('item3');
+    var itemfour = localStorage.getItem('item4');
+    var itemfive = localStorage.getItem('item5');
+    var itemsix = localStorage.getItem('item6');
+    document.getElementById('itemone').innerHTML = itemone;
+    document.getElementById('itemtwo').innerHTML = itemtwo;
+    document.getElementById('itemthree').innerHTML = itemthree;
+    document.getElementById('itemfour').innerHTML = itemfour;
+    document.getElementById('itemfive').innerHTML = itemfive;
+    document.getElementById('itemsix').innerHTML = itemsix;
     
     function back() {
       location.href="index.html";
