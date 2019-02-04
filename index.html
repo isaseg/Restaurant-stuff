@@ -389,7 +389,7 @@
         var name1 = mydata.food[0].name;
         window.name1 = name1;
         document.getElementById('nameone').innerHTML = mydata.food[0].name;
-        document.getElementById('priceone').innerHTML = "$" + mydata.food[0].price;
+        document.getElementById('priceone').innerHTML = "$" + mydata.food[0].price.toFixed(2);
         document.getElementById('descone').innerHTML = mydata.food[0].description;
           
         var price2 = mydata.food[1].price;
@@ -397,7 +397,7 @@
         var name2 = mydata.food[1].name;
         window.name2 = name2;
         document.getElementById('nametwo').innerHTML = mydata.food[1].name;
-        document.getElementById('pricetwo').innerHTML = "$" + mydata.food[1].price;
+        document.getElementById('pricetwo').innerHTML = "$" + mydata.food[1].price.toFixed(2);
         document.getElementById('desctwo').innerHTML = mydata.food[1].description;
         
         var price3 = mydata.food[2].price;
@@ -405,7 +405,7 @@
         var name3 = mydata.food[2].name;
         window.name3 = name3;
         document.getElementById('namethree').innerHTML = mydata.food[2].name;
-        document.getElementById('pricethree').innerHTML = "$" + mydata.food[2].price;
+        document.getElementById('pricethree').innerHTML = "$" + mydata.food[2].price.toFixed(2);
         document.getElementById('descthree').innerHTML = mydata.food[2].description;
         
         var price4 = mydata.food[3].price;
@@ -413,7 +413,7 @@
         var name4 = mydata.food[3].name;
         window.name4 = name4;
         document.getElementById('namefour').innerHTML = mydata.food[3].name;
-        document.getElementById('pricefour').innerHTML = "$" + mydata.food[3].price;
+        document.getElementById('pricefour').innerHTML = "$" + mydata.food[3].price.toFixed(2);
         document.getElementById('descfour').innerHTML = mydata.food[3].description;
         
         var price5 = mydata.food[4].price;
@@ -421,7 +421,7 @@
         var name5 = mydata.food[4].name;
         window.name5 = name5;
         document.getElementById('namefive').innerHTML = mydata.food[4].name;
-        document.getElementById('pricefive').innerHTML = "$" + mydata.food[4].price;
+        document.getElementById('pricefive').innerHTML = "$" + mydata.food[4].price.toFixed(2);
         document.getElementById('descfive').innerHTML = mydata.food[4].description;
         
         var price6 = mydata.food[5].price;
@@ -429,7 +429,7 @@
         var name6 = mydata.food[5].name;
         window.name6 = name6;
         document.getElementById('namesix').innerHTML = mydata.food[5].name;
-        document.getElementById('pricesix').innerHTML = "$" + mydata.food[5].price;
+        document.getElementById('pricesix').innerHTML = "$" + mydata.food[5].price.toFixed(2);
         document.getElementById('descsix').innerHTML = mydata.food[5].description;
         }
       };
