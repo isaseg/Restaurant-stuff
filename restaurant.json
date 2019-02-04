@@ -23,12 +23,12 @@
     {
       "name": "Bacon Cheeseburger",
       "price": 2.00,
-      "description": "This is a burger with two patties, two slices of cheese, bacon, and two buns"
+      "description": "This is a burger with two patties, two slices of cheese, bacon, and two buns with sesame seeds"
     },
     {
       "name": "Fish Burger",
       "price": 4.00,
-      "description": "This is a burger with two patties, white pollock with panko breading, tartar sauce, pickles, and two buns with sesame seeds"
+      "description": "This is a burger with two patties, white pollock with panko breading, tartar sauce, pickles, and two buns"
     }
     ]
 }
