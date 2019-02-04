@@ -39,13 +39,13 @@
     <button id="back" onclick="back()">Return to Restaurant Page</button>
   </div>
   <script>
-    var itemone = localStorage.getItem('item1');
-    var itemtwo = localStorage.getItem('item2');
-    var itemthree = localStorage.getItem('item3');
-    var itemfour = localStorage.getItem('item4');
-    var itemfive = localStorage.getItem('item5');
-    var itemsix = localStorage.getItem('item6');
-    var totalPrice = localStorage.getItem('totalPrice');
+    var itemone = sessionStorage.getItem('item1');
+    var itemtwo = sessionStorage.getItem('item2');
+    var itemthree = sessionStorage.getItem('item3');
+    var itemfour = sessionStorage.getItem('item4');
+    var itemfive = sessionStorage.getItem('item5');
+    var itemsix = sessionStorage.getItem('item6');
+    var totalPrice = sessionStorage.getItem('totalPrice');
     document.getElementById('itemone').innerHTML = itemone;
     document.getElementById('itemtwo').innerHTML = itemtwo;
     document.getElementById('itemthree').innerHTML = itemthree;
