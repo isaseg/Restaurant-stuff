@@ -384,7 +384,7 @@
         if (this.readyState == 4 && this.status == 200) {
           var mydata = JSON.parse(this.responseText);
     
-        var price1 = mydata.food[0].price;          
+        var price1 = mydata.food[0].price;
         window.price1 = price1;
         var name1 = mydata.food[0].name;
         window.name1 = name1;
@@ -443,8 +443,8 @@
           var foodAndAmount1 = document.getElementById('itemone').innerHTML = amount1 + name1;
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item1', foodAndAmount1);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item1', foodAndAmount1);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
       }
         function add1() {
@@ -454,8 +454,8 @@
           var foodAndAmount1 = document.getElementById('itemone').innerHTML = amount1 + " Hamburger";
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item1', foodAndAmount1);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item1', foodAndAmount1);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
           }
       
@@ -466,8 +466,8 @@
           var foodAndAmount2 = document.getElementById('itemtwo').innerHTML = amount2 + " Double Burger";
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item2', foodAndAmount2);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item2', foodAndAmount2);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
       }
         function add2() {
@@ -477,8 +477,8 @@
           var foodAndAmount2 = document.getElementById('itemtwo').innerHTML = amount2 + " Double Burger";
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item2', foodAndAmount2);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item2', foodAndAmount2);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
           }
       
@@ -489,8 +489,8 @@
           var foodAndAmount3 = document.getElementById('itemthree').innerHTML = amount3 + " Cheeseburger";
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item3', foodAndAmount3);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item3', foodAndAmount3);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
       }
         function add3() {
@@ -500,8 +500,8 @@
           var foodAndAmount3 = document.getElementById('itemthree').innerHTML = amount3 + " Cheeseburger";
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item3', foodAndAmount3);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item3', foodAndAmount3);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
           }
       
@@ -512,8 +512,8 @@
           var foodAndAmount4 = document.getElementById('itemfour').innerHTML = amount4 + " Double Cheeseburger";
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item4', foodAndAmount4);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item4', foodAndAmount4);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
       }
         function add4() {
@@ -523,8 +523,8 @@
           var foodAndAmount4 = document.getElementById('itemfour').innerHTML = amount4 + " Double Cheeseburger";
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item4', foodAndAmount4);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item4', foodAndAmount4);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
           }
       
@@ -535,8 +535,8 @@
           var foodAndAmount5 = document.getElementById('itemfive').innerHTML = amount5 + " BBQ Bacon Burger";
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item5', foodAndAmount5);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item5', foodAndAmount5);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
       }
         function add5() {
@@ -546,8 +546,8 @@
           var foodAndAmount5 = document.getElementById('itemfive').innerHTML = amount5 + " BBQ Bacon Burger";
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item5', foodAndAmount5);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item5', foodAndAmount5);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
           }
       
@@ -558,8 +558,8 @@
           var foodAndAmount6 = document.getElementById('itemsix').innerHTML = amount6 + " Fish Burger";
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item6', foodAndAmount6);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item6', foodAndAmount6);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
       }
         function add6() {
@@ -569,8 +569,8 @@
           var foodAndAmount6 = document.getElementById('itemsix').innerHTML = amount6 + " Fish Burger";
           }
           document.getElementById('totalPrice').innerHTML = "Total price: $"+ (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2);
-          localStorage.setItem('item6', foodAndAmount6);
-          localStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
+          sessionStorage.setItem('item6', foodAndAmount6);
+          sessionStorage.setItem('totalPrice', (tax*((amount1 * price1) + (amount2 * price2) + (amount3 * price3) + (amount4 * price4) + (amount5 * price5) + (amount6 * price6))).toFixed(2));
           document.getElementById('checkout').style.opacity = 1;
           }
         function checkout() {
