@@ -36,7 +36,6 @@
     <p id="itemfive"></p>
     <p id="itemsix"></p>
     <p id="totalPrice"></p>
-    <button id="back" onclick="back()">Return to Restaurant Page</button>
   </div>
   <script>
     var itemone = sessionStorage.getItem('item1');
@@ -53,10 +52,6 @@
     document.getElementById('itemfive').innerHTML = itemfive;
     document.getElementById('itemsix').innerHTML = itemsix;
     document.getElementById('totalPrice').innerHTML = "Total Price: $" + totalPrice;
-    
-    function back() {
-      location.href="index.html";
-    }
   </script>
   </body>
 </html>
